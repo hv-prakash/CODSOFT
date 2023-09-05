@@ -1,0 +1,204 @@
+/* Reset some default styles and set a background color for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Style the header section */
+header {
+    background: linear-gradient(45deg, #FFD700, #FF4500);
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Change color on hover */
+}
+
+/* Style the about section */
+#about {
+    background: linear-gradient(45deg, #FF4500, #FFD700);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-content img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style the skills section */
+#skills {
+    background: linear-gradient(45deg, #FFD700, #FF4500);
+    padding: 60px 0;
+}
+
+.skills-content h2 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.skills-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-content ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Style the projects section */
+#projects {
+    background: linear-gradient(45deg, #FF4500, #FFD700);
+    padding: 60px 0;
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Add a slight hover effect */
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.project p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Style the resume section */
+#resume {
+    background: linear-gradient(45deg, #FFD700, #FF4500);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.resume-content h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.resume-content a {
+    text-decoration: none;
+    background-color: #FF4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resume-content a:hover {
+    background-color: #FFD700; /* Change background color on hover */
+}
+
+/* Style the contact section */
+#contact {
+    background: linear-gradient(45deg, #FF4500, #FFD700);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+/* Style the footer */
+footer {
+    background: linear-gradient(45deg, #FFD700, #FF4500);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project {
+        width: calc(50% - 20px);
+    }
+}
